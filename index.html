@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD Website</title>
+
+  <link rel="stylesheet" href="Css/all.min.css">
+  <link rel="stylesheet" href="Css/bootstrap.min.css">
+  <link rel="stylesheet" href="Css/Style.css">
+</head>
+<body>
+
+  <div class="w-75 p-3  m-auto">
+    <label for="">Product Name: </label>
+    <input id="productName" type="text" class="form-control ">
+    <div id="nameAlert" class="alert alert-danger p-2 my-3 d-none">1)product name  Frist Letter should be UpperCase<br/>2)No Numbers </div>
+    <label for="">Product Price: </label>
+    <input id="productPrice" type="number" class="form-control">
+    <label for="">Product Category: </label>
+    <input id="productCategory" type="text" class="form-control">
+    <label for="">Product Description: </label>
+    <textarea id="productDesc" class="form-control"></textarea>
+    <button disabled id="addBtn" class="btn btn-primary float-end my-2">add product</button>
+    <div class="clearfix"></div>
+    <label for="">Search for Product:</label>
+    <input id="searchInput" placeholder="search by name.." type="text" class="form-control my-2">
+    <table class="table">
+        <thead>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Discription</th>
+            <th></th>
+            <th></th>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+    </table>
+  <script src="Js/bootstrap.bundle.min.js"></script>
+  <script src="Js/all.min.js"></script>
+  <script src="Js/Script.js"></script>
+</body>
+</html>
